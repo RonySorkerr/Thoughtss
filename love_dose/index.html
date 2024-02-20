@@ -41,7 +41,7 @@
           <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি আমাকে কতটুকু ভালোবাসেন?</h1>
           <div class="flex justify-around">
             <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">&#8734;</button>
-            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">0</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">একটুও না</button>
           </div>
         </div>
       </div>
@@ -74,8 +74,8 @@
         <div class="p-4 space-y-20">
           <h1 class="text-center text-[#39ff6b] text-3xl lg:text-5xl">আপনি কি আমার জন্য সব ত্যাগ করতে পারবেন?</h1>
           <div class="flex justify-around">
-            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
-            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+            <button onclick="nextScreen('screen4', 'screen5')" id="" class="btn border-t-pink-500 bg-white text-[#ff4141] text-2xl">জ্বি অবশ্যই</button>
+            <button onclick="nextScreen('screen4', 'screen5')" id="" class="btn border-t-pink-500 bg-white text-[#ff4141] text-xl">না পারতাম না</button>
           </div>
         </div>
       </div>
@@ -83,16 +83,16 @@
   </section>
   <!-- screen 5 -->
   <section>
-    <div class="hidden" id="screen4">
+    <div class="hidden" id="screen5">
       <!-- container -->
       <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
-        style="background-image: url('imgs/love4.jpg');">
+        style="background-image: url('imgs/love11.jpg');">
         <!-- contents -->
         <div class="p-4 space-y-20">
-          <h1 class="text-center text-[#3537bd] text-3xl lg:text-5xl">সারাক্ষণ আমার কথা মনে পড়ে তাই না?</h1>
+          <h1 class="text-center text-[#ff32f5] text-3xl lg:text-5xl">সারাক্ষণ আমার কথা মনে পড়ে তাই না?</h1>
           <div class="flex justify-around">
-            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
-            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">জ্বি</button>
+            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">একটুুও না</button>
           </div>
         </div>
       </div>
@@ -106,14 +106,6 @@
   <section></section>
 
   <script>
-    // const btn = document.getElementById('yes1');
-    // btn.addEventListener('click', function () {
-    //   const homeScreen = document.getElementById('homeScreen');
-    //   const screen = document.getElementById('nextScreen')
-    //   homeScreen.classList.add('hidden');
-    //   screen.classList.remove('hidden')
-
-    // })
     function nextScreen(id, id2) {
       const element = document.getElementById(id);
       const element2 = document.getElementById(id2)
