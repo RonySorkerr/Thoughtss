@@ -13,7 +13,7 @@
   
   <!-- home screen  -->
   <section>
-    <div class="hidden" id="homeScreen">
+    <div class="" id="homeScreen">
       <!-- container -->
       <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
         style="background-image: url('imgs/love3.jpg');">
@@ -40,8 +40,8 @@
         <div class="p-4 space-y-20">
           <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি আমাকে কতটুকু ভালোবাসেন?</h1>
           <div class="flex justify-around">
-            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">0</button>
-            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">&#8734;</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">&#8734;</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">0</button>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
   </section>
   <!-- screen3 -->
   <section>
-    <div class="" id="screen3">
+    <div class="hidden" id="screen3">
       <!-- container -->
       <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
         style="background-image: url('imgs/love2.jpg');">
@@ -57,8 +57,25 @@
         <div class="p-4 space-y-20">
           <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি কি আমাকে লবণের ভালোবাসেন?</h1>
           <div class="flex justify-around">
-            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
-            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+            <button onclick="nextScreen('screen3', 'screen4')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
+            <button onclick="nextScreen('screen3', 'screen4')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen4 -->
+  <section>
+    <div class="hidden" id="screen4">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love4.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#39ff6b] text-3xl lg:text-5xl">আপনি কি আমার জন্য সব ত্যাগ করতে পারবেন?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
+            <button onclick="nextScreen()" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
           </div>
         </div>
       </div>
