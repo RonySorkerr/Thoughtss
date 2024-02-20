@@ -10,9 +10,10 @@
 </head>
 
 <body>
+  
   <!-- home screen  -->
   <section>
-    <div class="" id="homeScreen">
+    <div class="hidden" id="homeScreen">
       <!-- container -->
       <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
         style="background-image: url('imgs/love3.jpg');">
@@ -22,8 +23,8 @@
             ভালোবাসেন?</h1>
           <!-- options -->
           <div class="flex justify-around">
-            <button id="yes1" class="btn border-t-pink-500 bg-white text-red-600 text-xl">Yes</button>
-            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+            <button onclick="nextScreen('homeScreen', 'nextScreen')" id="yes1" class="btn border-t-pink-500 bg-white text-red-600 text-xl">Yes</button>
+            <button onclick="nextScreen('homeScreen', 'nextScreen')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
           </div>
         </div>
       </div>
@@ -39,8 +40,25 @@
         <div class="p-4 space-y-20">
           <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি আমাকে কতটুকু ভালোবাসেন?</h1>
           <div class="flex justify-around">
-            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">&#8734;</button>
-            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">0</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">0</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">&#8734;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen3 -->
+  <section>
+    <div class="" id="screen3">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love2.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি কি আমাকে লবণের ভালোবাসেন?</h1>
+          <div class="flex justify-around">
+            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-2xl">Yes</button>
+            <button id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
           </div>
         </div>
       </div>
@@ -52,19 +70,21 @@
   <section></section>
   <section></section>
   <section></section>
-  <section></section>
 
   <script>
-    const btn = document.getElementById('yes1');
-    btn.addEventListener('click', function () {
-      const homeScreen = document.getElementById('homeScreen');
-      const screen = document.getElementById('nextScreen')
-      homeScreen.classList.add('hidden');
-      screen.classList.remove('hidden')
+    // const btn = document.getElementById('yes1');
+    // btn.addEventListener('click', function () {
+    //   const homeScreen = document.getElementById('homeScreen');
+    //   const screen = document.getElementById('nextScreen')
+    //   homeScreen.classList.add('hidden');
+    //   screen.classList.remove('hidden')
 
-    })
-    function nextScreen(id, value) {
+    // })
+    function nextScreen(id, id2) {
       const element = document.getElementById(id);
+      const element2 = document.getElementById(id2)
+      element.classList.add('hidden')
+      element2.classList.remove('hidden')
 
     }
   </script>
